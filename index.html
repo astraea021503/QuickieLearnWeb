@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+       <link rel="shortcut icon" type="x-icon" href="quickielearn.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Quickie Learn</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <div class="logo">
+            <img src="QUICKIE LEARN.png" alt="Logo">
+        </div>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">About Us</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Lessons</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Code Compiler</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">Contact</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Log In</h2>
+            
+            <div class="login__group">
+               <div>
+                  <label for="email" class="login__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="email" class="login__input">
+               </div>
+               
+               <div>
+                  <label for="password" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your password" id="password" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="login__signup">
+                  You do not have an account? <a href="#">Sign up</a>
+               </p>
+   
+               <a href="#" class="login__forgot">
+                  You forgot your password
+               </a>
+   
+               <button type="submit" class="login__button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <img src="assets/img/banner-img-1.jpg" alt="image" class="main__bg">
+      </main>
+
+      <!-- Filter Buttons -->
+<p id="all-lessons" class="centered">All Lessons</p>
+
+
+    <div class="filter-buttons">
+        <button data-filter="*">All</button>
+        <button data-filter=".html">HTML</button>
+        <button data-filter=".css">CSS</button>
+        <button data-filter=".javascript">JavaScript</button>
+    </div>
+
+    <!-- Lessons Grid -->
+<div class="lessons-grid collection-list">
+    <div class="lesson html">
+        <a href="#" onclick="showLoading('Lessons/1/engage1.html')">
+        <img src="images/html.png" alt="Lesson 1"> </a>
+        <h3>HTML Fundamentals</h3>
+    </div>
+    <div class="lesson html">
+        <a href="#" onclick="showLoading('Lessons/2/engage1.html')">
+        <img src="images/html.png" alt="Lesson 2"> </a>
+        <h3>HTML and CSS Essentials</h3>
+    </div>
+    <div class="lesson html">
+        <a href="#" onclick="showLoading('Lessons/3/engage1.html')">
+        <img src="images/html.png" alt="Lesson 3"> </a>
+        <h3>Advanced HTML and CSS</h3>
+    </div>
+    <div class="lesson css">
+        <a href="#" onclick="showLoading('Lessons/4/engage1.html')">
+        <img src="images/css.png" alt="Lesson 4"> </a>
+        <h3>CSS Layout Mastery</h3>
+    </div>
+    <div class="lesson css">
+        <a href="#" onclick="showLoading('Lessons/5/engage1.html')">
+        <img src="images/css.png" alt="Lesson 5"> </a>
+        <h3>Mastering CSS Grids</h3>
+    </div>
+    <div class="lesson css">
+        <a href="#" onclick="showLoading('Lessons/6/engage1.html')">
+        <img src="images/css.png" alt="Lesson 6"> </a>
+        <h3>CSS Form Styling</h3>
+    </div>
+    <div class="lesson css">
+        <a href="#" onclick="showLoading('Lessons/7/engage1.html')">
+        <img src="images/css.png" alt="Lesson 7"> </a>
+        <h3>Mastering CSS Website Layouts</h3>
+    </div>
+    <div class="lesson javascript">
+        <a href="#" onclick="showLoading('Lessons/8/engage1.html')">
+        <img src="images/javascript.png" alt="Lesson 8"> </a>
+        <h3>Introduction to JavaScript</h3>
+    </div>
+    <div class="lesson javascript">
+        <a href="#" onclick="showLoading('Lessons/9/engage1.html')">
+        <img src="images/javascript.png" alt="Lesson 9"> </a>
+        <h3>Understanding JavaScript Data Types and Arrays</h3>
+    </div>
+    <div class="lesson javascript">
+        <a href="#" onclick="showLoading('Lessons/10/engage1.html')">
+        <img src="images/javascript.png" alt="Lesson 10"> </a>
+        <h3>Mastering JavaScript Functions: Syntax and Application</h3>
+    </div>
+    <div class="lesson javascript">
+        <a href="#" onclick="showLoading('Lessons/11/engage1.html')">
+        <img src="images/javascript.png" alt="Lesson 11"> </a>
+        <h3>Exploring JavaScript Date, Math, and Random</h3>
+    </div>
+    <div class="lesson javascript">
+        <a href="#" onclick="showLoading('Lessons/12/engage1.html')">
+        <img src="images/javascript.png" alt="Lesson 12"> </a>
+        <h3>Mastering JavaScript Conditionals and Loops</h3>
+    </div>
+</div>
+
+<!-- Code Section -->
+<section id="code-compiler" class="code-section"> <!-- Add ID here -->
+    <p class="centered">Code Compiler</p>
+    <div class="code-grid">
+        <div class="code-item">
+            <a href="https://onecompiler.com/html">
+            <img src="images/html.png" alt="Code 1"> </a>
+            <h3>HTML</h3>
+        </div>
+        <div class="code-item">
+            <a href="https://www.w3schools.com/css/css_editor.asp">
+            <img src="images/css.png" alt="Code 2"> </a>
+            <h3>CSS</h3>
+        </div>
+        <div class="code-item"> 
+            <a href="https://onecompiler.com/javascript">
+            <img src="images/javascript.png" alt="Code 3"> </a>
+            <h3>JavaScript</h3>
+        </div>
+    </div>
+</section>
+
+      <footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Quickie Learn</h3>
+            <p>Copyright © 2024 Quickie Learn. All rights reserved. Quickie Learn™ is a registered trademark of Quickie Learn Pte Ltd.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">> Home</a></li>
+                <li><a href="#">> About</a></li>
+                <li><a href="#all-lessons">> Lessons</a></li>
+                <li><a href="#code-compiler">> Code Compiler</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>San Marcelino St, Ayala Blvd, Ermita, Manila, 1000</p>
+            <p><a href="mailto:quickielearn.support@gmail.com">quickielearn.support@gmail.com</a></p>
+            <p>+9495 7240 61</p>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://web.facebook.com/profile.php?id=100009879432678"><i class="fab fa-facebook-f" title="Facebook"></i></a>
+                <a href="https://x.com/Jufer_Rio"><i class="fab fa-x" title="X"></i></a>
+                <a href="https://www.instagram.com/jufer_rio/"><i class="fab fa-instagram" title="Instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
